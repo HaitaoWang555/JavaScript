@@ -16,7 +16,7 @@ var newArr = arr.pop()
 - shift 把数组第一位拿出来返回，数组发生变化
 ```
 var arr = [1,2,3,5,8]
-var newArr = arr.pop()
+var newArr = arr.shift()
 // arr [2,3,5,8]
 // newArr 1
 ```
