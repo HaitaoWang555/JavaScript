@@ -34,7 +34,9 @@ add.call(o, 5, 7) // 1 + 3 + 5 + 7 = 16
 
 add.apply(o, [10, 20]) // 1 + 3 + 10 + 20 = 34
 ```
+
 - bind方法
+
 ```
 function f(){
   return this.a
@@ -44,11 +46,12 @@ console.log(g()) // azerty
 
 var h = g.bind({a:'yoo'}) // bind只生效一次！
 console.log(h()) // azerty
-
 ```
+
 - 作为对象的方法
 
-  当函数作为对象里的方法被调用时，它们的 this 是调用该函数的对象。
+当函数作为对象里的方法被调用时，它们的 this 是调用该函数的对象。
+
 ```
 var o = {
   prop: 37,
@@ -59,6 +62,7 @@ var o = {
 
 console.log(o.f()) //  37
 ```
+
 - 箭头函数
   
   就是外面的this

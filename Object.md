@@ -8,6 +8,7 @@ console.log(Object.entries(object2)[2])
 // expected output: Array ["2", "c"]
 ```
 - Object.freeze() 方法可以冻结一个对象，冻结指的是不能向这个对象添加新的属性，不能修改其已有属性的值，不能删除已有属性，以及不能修改该对象已有属性的可枚举性、可配置性、可写性。该方法返回被冻结的对象。
+
 ```
 const object1 = {
   property1: 42
@@ -21,8 +22,11 @@ object2.property1 = 33;
 console.log(object2.property1);
 // expected output: 42
 ```
+
 - Object.is() 方法判断两个值是否是相同的值。
+
 - Object.keys() 方法会返回一个由一个给定对象的自身可枚举属性组成的数组
+
 ```
 // simple array
 var arr = ['a', 'b', 'c'];
@@ -45,10 +49,15 @@ var myObj = Object.create({}, {
 myObj.foo = 1;
 console.log(Object.keys(myObj)); // console: ['foo']
 ```
+
 - hasOwnProperty() 方法会返回一个布尔值，指示对象自身属性中是否具有指定的属性
+
 - toString() 方法返回一个表示该对象的字符串。
+
 - valueOf() 方法返回指定对象的原始值。
+
 - Object.defineProperty() 方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性， 并返回这个对象
+
 ```
 var person  = {
   _data: {
